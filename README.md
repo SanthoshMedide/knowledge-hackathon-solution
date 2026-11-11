@@ -4,11 +4,11 @@ Hackathon submission: a rules + retrieval system (Python standard library only, 
 website snapshots and answers with the current, correctly-tiered value, a source, and an honest "I don't know".
 
 * `submission/solution.py` - the `build()` entry point (`ingest`, `answer`, `conflicts`)
-* `submission/NOTES.md` - approach, the written-down "what is current" rules, known limits
-* `tools/` - dev helpers (`review.py`, `ask.py`); they expect the hackathon kit layout (`harness/`, `snapshots/`, `eval/`)
+* `submission/NOTES.md` - approach, the written-down "what is current" rules, API keys (none), known limits
+* `harness/`, `eval/` - the kit's scorer and public questions, unchanged, so the repo runs from a fresh clone
+* `tools/` - dev helpers (`review.py`, `ask.py`)
 
-Run with the kit's scorer from the kit's top folder:
+The website snapshots are NOT in this repo (shared for the event only). To run, put the kit's `snapshots_zip/`
+folder next to `harness/` (the scorer unpacks it on first run), then from the top folder:
 
     python harness/run_eval.py --submission submission --eval eval/public_eval.jsonl
-
-The website snapshots are not included (shared for the event only).

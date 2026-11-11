@@ -1,0 +1,2 @@
+# No third-party packages are needed: the solution uses only the Python standard library (3.9+).
+# No API keys are needed either.
