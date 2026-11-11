@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+results/
+# crawled website data is for the event only - never commit it
+snapshots/
+snapshots_zip/
